@@ -1,0 +1,120 @@
+.content{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    left: calc((100% - 1000px)/2);
+    box-shadow:
+            0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .8),
+            23px 0 20px -23px rgba(0, 0, 0, .8),
+            0 0 40px rgba(0, 0, 0, .1) inset;
+    padding: 30px;
+    text-align: center;
+}
+
+footer, header{
+    width: 1000px;
+    position: relative;
+    left: calc((100% - 1000px)/2);
+    padding:0 30px 0 30px;
+
+
+}
+#regForm{
+    width: 500px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.form{
+    width: 300px;
+    font-size: 1em;
+}
+.content h1{
+    width: 1000px;
+    margin-bottom: 20px;
+}
+.bt{
+    margin-top: 25px;
+    border-radius: 8px;
+    border: 1px solid dimgrey;
+    color:black;
+    background-color: #a3a2ff;
+    padding: 3px;
+
+}
+.info{
+    /*border: 1px solid black;*/
+}
+.password{
+    /*border: 1px solid black;*/
+    position: relative;
+    left: 500px;
+    /*top:-431px;*/
+    top:-380px;
+}
+.incontent{
+    /*border: 1px solid black;*/
+    width: 500px;
+}
+.wrongPassword{
+
+    font-weight: 900;
+    color: red;
+    font-size: 1.5em;
+    margin: 30px 0 0 0;
+
+}
+.notif{
+
+    position: relative;
+    left: 500px;
+    top:-400px;
+
+
+}
+#noMatch{
+    display: none;
+}
+#forbSymb{
+    display: none;
+}
+#wrongEmail{
+    display: none;
+}
+#fillAll{
+    display: none;
+}
+
+.bt:hover{
+    cursor: pointer;
+}
+/*.bt:focus{*/
+    /*background-color: #7271b3;*/
+/*}*/
+.bt:active{
+    background-color:#7271b3; ;
+}
+#less8{
+    display: none;
+}
+.captchaInput{
+    width: 50px;
+}
+.captcha{
+
+    font-size: 1.2em;
+    position: absolute;
+    padding: 30px;
+    /*top:550px;*/
+    top:490px;
+    left: 160px;
+}
+#captchaNotif{
+    display: none;
+}
+#less30{
+    display: none;
+}
+
+

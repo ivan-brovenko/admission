@@ -1,0 +1,23 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<div class="atestat admisNotification">
+    <h2><fmt:message key="account.reg.information.headline"/> </h2>
+    <div class="addedApl finalCongrats">
+      <fmt:message key="account.final.congrats1"/> ${application.id}
+         <fmt:message key="account.final.congrats2"/> ${application.univerName}
+         <fmt:message key="account.final.congrats3"/> ${application.departmentName}
+        <fmt:message key="account.final.congrats7"/> ${application.univerCity}
+        <fmt:message key="account.final.congrats4"/>
+        <fmt:message key="account.final.congrats5"/> ${application.price} <fmt:message key="account.final.congrats6"/>
+
+
+        <div class="priority">
+            <p><fmt:message key="account.final.miniline"/> </p>
+            <fmt:message key="account.final.priority"/> ${application.priority}
+        </div>
+
+
+    </div>
+
+</div>
+<div class="additional"></div>

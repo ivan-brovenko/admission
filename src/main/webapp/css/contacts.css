@@ -1,0 +1,89 @@
+#acc{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+
+    margin-top:0.75em;
+    margin-right: 220px;
+}
+#acc:hover{
+    color: red;
+}
+.inner{
+
+    width: 500px;
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #d8d7ff;
+
+}
+.inner .field{
+    display: block;
+    width: 200px;
+    position: relative;
+
+}
+#area{
+    width: 500px;
+    height: 350px;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 0.9em;
+}
+.inner h5{
+    text-align: left;
+    font-size: 1.2em;
+}
+.rightInner{
+    border: 1px solid black;
+    width: 350px;
+    height: 400px;
+    float: right;
+    display: inline-block;
+    position: absolute;
+    top:140px;
+    left: 620px;
+    padding: 20px;
+
+
+}
+.rightInner h5{
+    font-size: 1.2em;
+}
+.rightInner p{
+    text-align: left;
+}
+textarea{
+    resize: none;
+}
+.bt{
+    font-size: 1.2em;
+    padding: 8px;
+    background-color: #dca5d1;
+    border-radius: 20px;
+    width: 100px;
+    margin-top: 20px;
+}
+.bt:hover{
+    cursor: pointer;
+}
+.notif{
+    font-size: 1.2em;
+    color: red;
+    margin-top: 20px;
+    font-weight: 600;
+    display: none;
+}
+#visibleNotif{
+    display: block;
+}
+#visibleNotif1{
+    display: block;
+}

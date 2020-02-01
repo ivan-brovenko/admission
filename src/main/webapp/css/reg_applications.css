@@ -1,0 +1,67 @@
+.atestat{
+    border: 1px solid black;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    left: calc((100% - 880px)/2);
+    padding: 20px 40px 20px 40px;
+}
+.application{
+    margin-top: 20px;
+    height: auto;
+}
+
+.atestat .addedApl{
+
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: #e7e4ff;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2em;
+
+
+}
+.content{
+    height: auto;
+}
+.atestat .addedApl h3{
+    text-align: center;
+}
+.atestat .addedApl h4{
+    margin-top: 20px;
+}
+.prior{
+    font-size: 1.2em;
+    background-color: yellowgreen;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    left: 520px;
+    top: 50px;
+
+}
+.atestat table tr td{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#acc{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    position:absolute;
+    top:0.75em;
+    right: 250px;
+}
+#acc:hover{
+    color: red;
+}
+

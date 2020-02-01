@@ -1,0 +1,371 @@
+a{
+    text-decoration: none;
+}
+.atestat{
+    border: 1px solid black;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    left: calc((100% - 880px)/2);
+    padding: 20px 40px 20px 40px;
+}
+.content{
+    height: auto;
+}
+
+.num{
+    /*border: 1px solid black;*/
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 20px;
+}
+.num1{
+    display: inline-block;
+}
+.num2{
+    display: inline-block;
+}
+table,tr,td{
+    border: 1px solid black;
+    width: 500px;
+    text-align: center;
+
+
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    padding: 5px;
+}
+.application{
+    margin-top: 20px;
+    height: auto;
+}
+.addApplication{
+    margin-top: 20px;
+    background-color: #ebffaf;
+    height: auto;
+
+}
+.atestat .addedApl{
+
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: #e7e4ff;
+
+}
+.departments tr td{
+    padding: 20px;
+    font-size: 1.2em;
+}
+.departments tr td select{
+    font-size: 1.2em;
+    width: 500px;
+}
+.departments{
+    margin-top: 50px;
+}
+
+.radioSort{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    width: 300px;
+
+}
+#submitButton{
+    margin:20px 0 20px 0;
+    font-size: 1.2em;
+    background-color: #dca5d1;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.radioSort .button{
+    width: 230px;
+    height: 30px;
+    border-radius: 20px;
+    margin:5px;
+}
+.radioSort .button:hover{
+    cursor: pointer;
+}
+#submitButton:hover{
+    cursor: pointer;
+}
+.atestat table tr td{
+    padding:10px;
+    font-size: 1.2em;
+}
+.atestat{
+    height: auto;
+
+}
+/*.radioSort div{*/
+    /**/
+/*}*/
+.atestat h2{
+    margin: 20px;
+}
+.regBut{
+    margin: 30px 10px 0 10px;
+    padding: 10px;
+    background-color: #dca5d1;
+    font-size: 1.2em;
+    border-radius: 20px;
+
+
+
+}
+.regBut:hover{
+    cursor: pointer;
+}
+.changeRes{
+
+    background-color: #dca5d1;
+
+}
+.atestat h3{
+    text-align: left;
+    margin: 30px 0 30px 0;
+}
+.subject{
+    display: none;
+}
+td div{
+display: inline-block;
+}
+
+#appl_page{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    position:absolute;
+    top:0.75em;
+    right: 250px;
+
+
+}
+#appl_page:hover{
+    color:red;
+}
+.zno{
+    margin-top: 20px;
+    height: auto;
+}
+.zno .addedApl{
+
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: #e7e4ff;
+    text-align: center;
+
+}
+.addedApl table{
+    width: 500px;
+    position: relative;
+    left: calc((100% - 500px)/2);
+
+}
+.addedApl table tr td select{
+    width: 200px;
+    font-size: 0.8em;
+}
+.rules{
+    display: inline-block;
+    width: 500px;
+    position: relative;
+    top: -160px;
+    left: 120px;
+    text-align: left;
+
+}
+.addedApl{
+    padding: 20px;
+    text-align: left;
+    font-size: 1.1em;
+}
+.addedApl p{
+    margin: 5px;
+
+}
+#changeAtestatButton{
+    text-align: left;
+}
+
+#regAtestatButton{
+    text-align: right;
+}
+.atestat table{
+
+}
+.notif{
+    color:red;
+    position: absolute;
+    top:200px;
+    left: 320px;
+    display: none;
+
+}
+.zno .addedApl .znoHeadline{
+    margin: 10px;
+}
+.zno .addedApl table tr td select {
+    display: none;
+}
+#atestatNotiffication{
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: 600;
+    color:red;
+    width: 300px;
+    left: 550px;
+    top:400px;
+    display: none;
+
+}
+#number{
+    display: none;
+}
+.znoNotif{
+    color:red;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 20px;
+    display: none;
+}
+.error{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: red;
+}
+
+#atestatInformation{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    /*position:absolute;*/
+    /*top:0.75em;*/
+    /*right: 400px;*/
+    margin-top: 0.75em;
+    margin-right: 230px;
+}
+#atestatInformation:hover{
+    color: red;
+}
+#znoSavedApplications{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin-right: 50px;
+    margin-top: 0.75em;
+    /*position:absolute;*/
+    /*top:0.75em;*/
+    /*right: 270px;*/
+}
+#znoSavedApplications:hover{
+    color: red;
+}
+.additional{
+    height: 500px;
+}
+.finalCongrats{
+    font-size: 1.3em;
+}
+.priority{
+    width: 200px;
+    background-color: darkgrey;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    left: 540px;
+    top: 10px;
+
+}
+.notifWrong{
+    color:red;
+    position: absolute;
+    top:230px;
+    left: 320px;
+    display: block;
+}
+
+.scan{
+    margin-top: 20px;
+}
+.uploadButton {
+    /*width: 0.1px;*/
+    /*height: 0.1px;*/
+    /*opacity: 0;*/
+    /*overflow: hidden;*/
+    /*position: absolute;*/
+    /*z-index: -1;*/
+    font-size: 1.3em;
+    background-color: #d8d7ff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+.bt{
+    font-size: 1.2em;
+    padding: 8px;
+    background-color: #dca5d1;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.bt{
+    cursor: pointer;
+}
+.scanNotif{
+    font-size: 1.2em;
+    color: red;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+#scanError{
+    display: block;
+}
+
+.sortDesc{
+    position: absolute;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    width: 300px;
+}
+.sortDesc .button{
+    width: 230px;
+    height: 30px;
+    border-radius: 20px;
+    margin:5px;
+}
+.sortDesc .button:hover{
+    cursor: pointer;
+}
+
+
+

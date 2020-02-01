@@ -1,0 +1,46 @@
+.content{
+    height: 1000px;
+
+}
+.atestat .addedApl{
+    background-color: white;
+}
+table {
+    border-collapse: collapse;
+}
+
+table{
+    width: 500px;
+}
+table, th, td {
+    border: 1px solid black;
+    position: relative;
+    left: calc((100% - 500px)/2);
+    margin-top: 20px;
+
+}
+.atestat{
+    height: 600px;
+}
+.number{
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #dcd1d3;
+}
+#acc{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    position:absolute;
+    top:0.75em;
+    right: 250px;
+}
+#acc:hover{
+    color: red;
+}

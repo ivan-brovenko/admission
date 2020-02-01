@@ -1,0 +1,26 @@
+.inner{
+    border: 1px solid black;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    left: calc((100% - 800px)/2);
+    margin-top: 20px;
+    background-color: #dccecd;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: left;
+
+}
+.bt{
+
+    padding:10px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    position: relative;
+    background-color: #dca5d1;
+    margin-top: -100px;
+
+}
+.bt:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<div class="atestat scan">
+    <h2><fmt:message key="file.scan.headline"/> </h2>
+    <c:if test="${empty state}">
+        <form action="/servlet?c=upload&language=" method="post" enctype="multipart/form-data" onsubmit="return fileValidation(this)">
+            <input type="file" id="file" name="file" class="uploadButton">
+            <input type="submit" value="<fmt:message key="file.scan.save"/> " class="bt">
+        </form>
+    </c:if>
+    <c:if test="${state eq true}">
+        ${fileName}
+    </c:if>
+    <div class="scanNotif"><fmt:message key="file.scan.notif"/> </div>
+    <div class="scanNotif" id="scanError">${noFileUploaded}</div>
+</div>

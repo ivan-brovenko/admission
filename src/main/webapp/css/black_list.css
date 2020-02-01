@@ -1,0 +1,48 @@
+a{
+    text-decoration: none;
+}
+
+#management{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+
+    margin-top:0.75em;
+    margin-right: 220px;
+}
+#management:hover{
+    color: red;
+}
+
+table{
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+    left: calc((100% - 500px )/2);
+}
+
+table tr td{
+    border:1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.bt{
+    font-size: 0.9em;
+    padding: 5px 10px 5px 10px;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.bt{
+    cursor: pointer;
+}
+.text{
+    margin-top: 20px;
+    font-size: 1.1em;
+}

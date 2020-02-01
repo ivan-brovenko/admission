@@ -1,0 +1,46 @@
+.bt{
+    padding:10px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    background-color: #dcbbd1;
+    margin-top: 20px;
+}
+.bt:hover{
+    cursor: pointer;
+}
+table{
+    border-collapse: collapse;
+}
+table tr td{
+    border: 1px solid black;
+}
+
+#management{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+
+    margin-top:0.75em;
+    margin-right: 220px;
+}
+#management:hover{
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+
+.notifWrong{
+    color:red;
+    text-align: center;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 50px;
+}

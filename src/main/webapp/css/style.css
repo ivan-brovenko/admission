@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: white;
+}
+
+#slider{
+    width: 99.5%;
+    /*height: 171px;*/
+    border:solid black;
+    overflow: hidden;
+
+
+}
+#line img{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+#line::after{
+    content:"";
+    display: inline;
+    clear: both;
+
+}
+#line{
+    width: 300%;
+    position: relative;
+    left:0;
+    transition: all 1s;
+
+}
+
+header{
+    background-color: #333333;
+    padding: 0.8em;
+    text-align: center;
+
+}
+.bt{
+
+    width:auto;
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+
+    font-size: 1em;
+
+
+    margin-right: 2em;
+
+    color:white;
+    background-color: #333333;
+    border: none;
+    font-family: Arial sans-serif;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+
+}
+.bt:link{
+    color:white;
+}
+.bt:hover{
+    color: #96ceff;
+}
+#logo{
+
+
+    /*text-shadow: 0 -2px 0 white;*/
+    text-decoration: blink;
+    font-size: 1.5em;
+    font-family: FuckingFont, "Akademie Alte","Beckett Regular", Arial, sans-serif;
+    /*margin-right: 20%;*/
+    margin-right: 8em;
+    background-color: #333333;
+    color:white;
+    border: none;
+    pointer-events: none;
+
+    max-font-size: 20%;
+    min-font-size: 20%;
+    width: auto;
+    height: auto;
+    max-width: 20%;
+    min-width: 20%;
+}
+
+#button1{right:0;}
+#button2{left: 0;}
+#button1, #button2{
+    position: absolute;
+    top:30%;
+    width: 80px;
+    height: 80px;
+    color:black;
+    font-size: 2em;
+    border-radius:50px;
+    opacity: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#button1:hover,#button2:hover {
+    opacity: 0.5;
+    transition: 0.8s;
+
+
+}
+.tab{
+    width: 24.3%;
+    height: 40%;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    font-size: 150%;
+
+}
+.squareText{
+    padding:5px;
+}
+.tab img{
+    width: 60%;
+    height: auto;
+    display: block;
+    position: relative;
+    left: 20%;
+    top: 10%;
+
+}
+
+.tabcont{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.footer{
+    background-image: linear-gradient(to right,white,violet);
+    width:100%;
+    height: 300px;
+    text-align: center;
+
+}
+
+
+
+@media screen and (max-width:950px) {
+
+    .tab{
+        width: 49.5%;
+        height: 49.5%;
+
+    }
+    #button1, #button2{
+        width: 60px;
+        height: 60px;
+        top:40%;
+    }
+    #hl{display: none}
+    .tab img{
+        width: 40%;
+        height: auto;
+        display: block;
+        position: relative;
+        left: 30%;
+        top: auto;
+
+    }
+    #slider{
+        display: none;
+    }
+
+}
+@media screen and (max-width:750px) {
+    header{
+        background-color: #333333;
+    }
+    .bt{
+        display: block;
+        padding:5px;
+    }
+    #logo{
+        margin: 0;
+    }
+    #button1, #button2{
+        width: 30px;
+        height: 30px;
+        font-size: 0.5em;
+        top:80%;
+        display: none;
+    }
+    .tab{
+
+        width: 100%;
+
+    }
+    #hl{display: none}
+
+    .tab img{
+        width: 15%;
+        height: auto;
+        display: block;
+        position: relative;
+        left: 42.5%;
+        top: auto;
+
+    }
+
+
+
+
+}
+
+/*@font-face {*/
+    /*!*font-family: "Beckett Regular";*!*/
+    /*!*src: url('../webfont/webfont1.woff');*!*/
+    /*!*font-family: "Akademie Alte";*!*/
+    /*!*src:url('../webfont/webfont2.woff');*!*/
+    /*font-family: FuckingFont;*/
+    /*src:url('../webfont/webfont3.woff');*/
+/*}*/
+#hl{
+    text-align: center;
+    animation-name: animation1;
+    animation-duration: 1s;
+    position: absolute;
+    font-size: 500%;
+    font-family: FuckingFont , sans-serif;
+    left: 25%;
+    top: 30%;
+    right: 25%;
+    color: white;
+    text-shadow:  4px 4px 5px black;
+
+}
+
+
+@keyframes animation1 {
+    from{
+        color:black;
+        transform: scale(0);
+        top: 60%;
+        opacity: 0;
+    }
+
+    to{
+        color:white;
+        opacity: .7;
+        top:30%;
+        transform: scale(1);
+    }
+
+}
+
+.lang{
+
+    width:auto;
+    height: auto;
+    font-size: 1em;
+    margin-right: 2em;
+    color:black;
+    background-color: white;
+
+}
+
+#hl{
+    text-align: center;
+    animation-name: animation1;
+    animation-duration: 1s;
+    position: absolute;
+    font-size: 2.5em;
+    font-family: sans-serif;
+
+
+    color: white;
+    text-shadow:  4px 4px 5px black;
+
+}
+
+.footer .rcol{
+    width: 90%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 130%;
+    position: relative;
+    top:10%;
+    font-family: sans-serif;
+
+}
+.rcol h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

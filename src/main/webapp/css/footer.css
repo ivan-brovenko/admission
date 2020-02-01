@@ -1,0 +1,10 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right,white,violet);
+    text-align: center;
+    border-top: solid black;
+    border-bottom: solid black;
+
+
+}

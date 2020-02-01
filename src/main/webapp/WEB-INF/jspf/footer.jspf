@@ -1,0 +1,8 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
+<footer>
+    <div>
+        ©stud.ua <my:copyright/> <fmt:message key="footer.text"/>
+    </div>
+
+</footer>

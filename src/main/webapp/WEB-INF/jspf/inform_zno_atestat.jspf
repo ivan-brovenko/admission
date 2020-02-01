@@ -1,0 +1,9 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<div class="atestat application">
+    <h2><fmt:message key="account.reg.information.headline"/> </h2>
+    <div class="addedApl">
+       <fmt:message key="account.reg.information.text"/>
+
+    </div>
+</div>

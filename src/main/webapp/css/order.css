@@ -1,0 +1,159 @@
+a{
+    text-decoration: none;
+}
+.content{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left: calc((100% - 1000px)/2);
+    box-shadow:
+            0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .8),
+            23px 0 20px -23px rgba(0, 0, 0, .8),
+            0 0 40px rgba(0, 0, 0, .1) inset;
+
+}
+
+.info{
+    /*width: 300px;*/
+    /*height: auto;*/
+
+    /*margin-left: calc((100% - 300px)/2);*/
+    /*margin-top: 30px;*/
+    border-bottom: 2px solid black;
+    /*border-radius: 10px;*/
+    text-align: left;
+    font-size: 30px;
+    display: block;
+    background-color: white;
+}
+.leftcoll{
+    width: 400px;
+    height: 700px;
+    overflow-y: scroll;
+    margin-left: 5%;
+    margin-top: 30px;
+    border: 2px solid black;
+
+    background-color: #cdd2ff;
+
+
+}
+.fields{
+
+    width: 400px;
+    position: absolute;
+    top: 40px;
+    right: 10%;
+
+
+
+    /*float: right;*/
+    text-align: center;
+    margin-top: 5%;
+    /*position: relative;*/
+    /*top:-352px;*/
+    /*left: -200px;*/
+    /*float: right;*/
+    float: right;
+
+
+}
+.form{
+
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    font-size: 30px;
+
+}
+.bt{
+    position: relative;
+    top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: greenyellow;
+    color:black;
+    border: 1px solid black;
+
+
+}
+.bt:hover{
+    cursor: pointer;
+}
+
+.wrap{
+    padding: 10% 8% 20% 8%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.headline{
+    margin: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    color:black;
+    font-weight: 700;
+    background-color: #c0ff74;
+    border: 2px solid black;
+    border-radius: 4px;
+
+}
+.pic{
+    width: 100px;
+}
+.innerHeadline{
+    margin-top: 20px;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    background-color: #ff5e00;
+    color: #000000;
+    border-radius: 10px;
+}
+.addBt{
+    background-color: greenyellow;
+    margin-left: 10%;
+    border-radius: 10px;
+    border:2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+
+
+
+}
+.price{
+    background-color: white;
+    text-align: left;
+    border: none;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: -20px;
+    color:orangered;
+    font-weight: bold;
+
+}
+.price:hover{
+    cursor: auto;
+}
+.addBt:hover{
+    cursor: pointer;
+
+}
+.pict{
+    text-align: left;
+    display: inline-block;
+}
+.inf{
+    display: inline-block;
+    text-align: left;
+    padding-left: 5px;
+    font-size: 20px;
+    position:relative;
+    bottom: 30px;
+
+
+}
+
+
+

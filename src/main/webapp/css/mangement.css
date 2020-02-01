@@ -1,0 +1,98 @@
+
+.content{
+    height: 1000px;
+}
+
+.departments{
+    border: 1px solid black;
+    height: 300px;
+    margin-bottom: 20px;
+
+}
+.students{
+    border:1px solid black;
+    height: 300px;
+    margin-bottom: 20px;
+
+}
+.admission{
+    border: 1px solid black;
+    height: 300px;
+    margin-bottom: 20px;
+
+}
+.bt{
+    padding:10px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    background-color: #dcbbd1;
+    margin-top: 20px;
+}
+.bt:hover{
+    cursor: pointer;
+}
+.inner{
+    border: 1px solid black;
+    width: 900px;
+    height: 150px;
+    background-color: #d8d7ff;
+    position: relative;
+    left: calc((100% - 900px)/2);
+    font-size: 1.2em;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#admission{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin-top: 0.75em;
+    margin-right: 230px;
+}
+#admission:hover{
+    cursor: pointer;
+    color:red;
+}
+#blackList{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin-top: 0.75em;
+    margin-right: 50px;
+}
+#blackList:hover{
+    cursor: pointer;
+    color: red;
+}
+
+#st5{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    margin-top: 0.75em;
+    margin-right: 50px;
+}
+#st5:hover{
+    cursor: pointer;
+    color: red;
+}

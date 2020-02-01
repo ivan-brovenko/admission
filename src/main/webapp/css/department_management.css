@@ -1,0 +1,154 @@
+a{
+    text-decoration: none;
+}
+
+table tr td{
+    border: 1px solid black;
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+
+}
+
+table{
+    margin-top: 20px;
+    width: 1000px;
+    position: relative;
+    left: calc((100% - 1000px)/2);
+    text-align: center;
+}
+.del{
+    padding:5px;
+    background-color: red;
+    font-size: 0.8em;
+    border-radius: 20px;
+    width: auto;
+
+}
+.del:hover{
+    cursor: pointer;
+}
+.bt{
+    padding:8px;
+    background-color: #dcbae2;
+    font-size: 0.8em;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+.bt:hover{
+    cursor: pointer;
+}
+.edit{
+    background-color: #d1ef46;
+    font-size: 0.8em;
+    padding:5px;
+    border-radius: 20px;
+    width:auto;
+}
+.edit:hover{
+    cursor: pointer;
+}
+input{
+    width: 180px;
+}
+.field{
+    display: none;
+}
+.editional{
+display: none;
+}
+.cancel{
+    background-color: red;
+    display: inline;
+    font-size: 1.2em;
+    text-align: center;
+
+
+}
+.cancel:hover{
+    cursor: pointer;
+}
+.submit{
+    font-size: 1.2em;
+
+
+}
+#cancelButton{
+    display: none;
+}
+#cancelButton:hover{
+    cursor: pointer;
+}
+#notif{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: red;
+    display: none;
+}
+#submitBt{
+    display: none;
+    font-size: 1.2em;
+}
+#submitBt{
+    cursor: pointer;
+}
+#addButton{
+    font-size: 1.2em;
+}
+#addButton:hover{
+    cursor: pointer;
+}
+#management{
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+    color:white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+
+    margin-top:0.75em;
+    margin-right: 220px;
+}
+#management:hover{
+    color: red;
+}
+.notif1{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: red;
+    display: none;
+}
+#notif1{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: red;
+    display: block;
+}
+.buttonSort{
+
+    width: 1000px;
+    margin-bottom: 100px;
+    position: relative;
+    left: calc((100% - 1000px)/2);
+    margin-top: 80px;
+    text-align: center;
+
+
+}
+.buttonSort .bt{
+    font-size: 0.9em;
+    width: 300px;
+}
+.content{
+    height: auto;
+}
+

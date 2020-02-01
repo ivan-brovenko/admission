@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE urlrewrite
+        PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+
+
+
+    <rule>
+        <from>^/stud.ua-en</from>
+        <to>/servlet?language=en</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua-ru</from>
+        <to>/servlet?language=ru</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua-ua</from>
+        <to>/servlet?language=ua</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua-login</from>
+        <to>/servlet?c=login&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua-logout</from>
+        <to>/servlet?c=logout&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua-signup</from>
+        <to>/servlet?c=reg&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua-account</from>
+        <to>/servlet?c=acc&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua/management</from>
+        <to>/servlet?c=manage&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua/entrants</from>
+        <to>/servlet?c=studManage&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua/admission</from>
+        <to>/servlet?c=finAdmiss&amp;language=</to>
+    </rule>
+
+    <!--<rule>-->
+        <!--<from>^/stud.ua-entrants</from>-->
+        <!--<to>/servlet?c=studManage&amp;language=</to>-->
+    <!--</rule>-->
+
+    <rule>
+        <from>^/stud.ua/departments</from>
+        <to>/servlet?c=depManage&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua/info</from>
+        <to>/servlet?c=entInf&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua/edit</from>
+        <to>/servlet?c=edit&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua/entrant-departments</from>
+        <to>/servlet?c=entDep&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua/entrant-zno</from>
+        <to>/servlet?c=znoInf&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>/stud.ua/black-list</from>
+        <to>/servlet?c=blackList&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua/unblock</from>
+        <to>/servlet?c=unblock&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>/stud.ua/contact</from>
+        <to>/servlet?c=contact&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>/stud.ua/confirm</from>
+        <to>/servlet?c=emailReg&amp;language=</to>
+    </rule>
+
+    <rule>
+        <from>/stud.ua/top5</from>
+        <to>/servlet?c=best5&amp;language=</to>
+    </rule>
+
+
+
+    <rule>
+        <from>^/stud.ua/rules</from>
+        <to>/jsp/rules.jsp</to>
+    </rule>
+
+    <rule>
+        <from>^/stud.ua</from>
+        <to>/index.jsp</to>
+    </rule>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<outbound-rule>-->
+        <!--<from>^/servlet?c=([a-z]+)&amp;language=([a-z]+)$</from>-->
+        <!--<to type="forward">/world/$1/$2</to>-->
+    <!--</outbound-rule>-->
+
+
+
+</urlrewrite>

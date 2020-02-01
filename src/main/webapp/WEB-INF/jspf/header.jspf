@@ -1,0 +1,57 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<fmt:setLocale value=""/>
+<fmt:setBundle basename="lan"/>
+
+<header>
+    <label id="logo">Stud.ua</label>
+
+<c:choose>
+    <c:when test="${not empty user}">
+        <c:if test="${user.role eq 'admin'}">
+            <a class="bt" href="/stud.ua/management"><fmt:message key="header.management"/> </a>
+            <a class="bt" href="/stud.ua-logout" style="color:aqua">
+                <fmt:message key="header.logout"/> ${user.email}</a>
+        </c:if>
+        <c:if test="${user.role eq 'entrant' or user.role eq 'reg_entrant'}">
+            <a class="bt" href="/stud.ua/rules"><fmt:message key="header.rules"/> </a>
+            <a class="bt" href="/stud.ua/contact"><fmt:message key="header.contact"/> </a>
+            <a class="bt" href="/stud.ua-account"><fmt:message key="header.account"/> </a>
+            <a class="bt" href="/stud.ua-logout" style="color:aqua">
+                <fmt:message key="header.logout"/> ${user.email}</a>
+        </c:if>
+        <c:if test="${user.role eq 'admis'}">
+            <a class="bt" href="/stud.ua/rules"><fmt:message key="header.rules"/> </a>
+            <a class="bt" href="/stud.ua-account"><fmt:message key="header.account"/> </a>
+            <a class="bt" href="/stud.ua-logout" style="color:aqua">
+                <fmt:message key="header.logout"/> ${user.email}</a>
+        </c:if>
+        <c:if test="${user.role eq 'blocked'}">
+            <a class="bt" href="/stud.ua/rules"><fmt:message key="header.rules"/> </a>
+            <a class="bt" href="/stud.ua-signup"><fmt:message key="header.singin"/> </a>
+            <a class="bt" href="/stud.ua-login" style="color:aqua"><fmt:message key="header.login"/></a>
+        </c:if>
+
+
+
+    </c:when>
+    <c:otherwise>
+        <%--<a class="bt" href=""><fmt:message key="header.departments"/> </a>--%>
+        <a class="bt" href="/stud.ua/rules"><fmt:message key="header.rules"/> </a>
+        <a class="bt" href="/stud.ua-signup"><fmt:message key="header.singin"/> </a>
+        <a class="bt" href="/stud.ua-login" style="color:aqua"><fmt:message key="header.login"/></a>
+
+    </c:otherwise>
+</c:choose>
+
+    <jsp:useBean id="locale" class="ua.nure.brovenko.SummaryTask4.resources.LocaleManager"/>
+        <select  id="lang" class="list" onchange="location=this.options[this.selectedIndex].value;">
+
+            <option hidden value="-1">${locale}</option>
+            <option value="/stud.ua-en">EN</option>
+            <option value="/stud.ua-ru">RU</option>
+            <option value="/stud.ua-ua">UA</option>
+        </select>
+
+
+
+</header>

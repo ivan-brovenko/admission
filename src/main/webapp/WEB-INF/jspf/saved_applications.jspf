@@ -1,0 +1,22 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
+
+<div class="atestat application">
+    <h2><fmt:message key="saved.applications.headline"/> </h2>
+    <c:forEach var="application" items="${applications}">
+        <div class="addedApl">
+            <h3><fmt:message key="saved.applications.number"/> ${application.id}</h3>
+            <h4>
+            <fmt:message key="saved.applications.univer"/> ${application.univerName}
+            </h4>
+            <h5>
+            <fmt:message key="saved.applications.department"/> ${application.departmentName}
+            </h5>
+            <div class="prior"><fmt:message key="saved.applications.priority"/> ${application.priority}</div>
+
+        </div>
+    </c:forEach>
+
+</div>

@@ -1,0 +1,82 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<div class="atestat">
+    <h2><fmt:message key="account.atestat.headline"/> </h2>
+
+    <form action="/servlet?c=regAtt&language=" method="post"  >
+    <div class="num">
+        <div class="num1"><fmt:message key="account.atestat.number"/> </div>
+        <div class="num2"><span>${numberAtt}</span><input type="text" id="number" name="numberAtt" ></div>
+    </div>
+        <div id="atestatNotiffication"><fmt:message key="error.atestat.notification1"/> <br> <fmt:message key="error.atestat.notification2"/> <br>
+        <fmt:message key="error.atestat.notification3"/> <br>
+        <fmt:message key="error.atestat.notification4"/> </div>
+        <div class="error">${duplicateAtestat}</div>
+    <h3><fmt:message key="account.atestat.results"/> </h3>
+
+        <table>
+            <tr>
+                <td><fmt:message key="account.atestat.urkainian"/> </td>
+                <td class="atestatMark">${ukrMova}<input type="text" name="ukrMova" class="subject"></td>
+
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.urk.lit"/> </td>
+                <td class="atestatMark">${ukrLit}<input type="text" name="ukrLit" class="subject"></td>
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.russian"/> </td>
+                <td class="atestatMark">${rusMova}<input type="text" name="rusMova" class="subject"></td>
+
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.lit"/> </td>
+                <td class="atestatMark">${rusLit}<input type="text" name="rusLit" class="subject"></td>
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.english"/> </td>
+                <td class="atestatMark">${english}<input type="text" name="english" class="subject"></td>
+
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.algebra"/> </td>
+                <td class="atestatMark">${algebra}<input type="text" name="algebra" class="subject"></td>
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.inform"/> </td>
+                <td class="atestatMark">${inform}<input type="text" name="inform" class="subject"></td>
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.geometry"/> </td>
+                <td><div class="atestatMark">${geometria}</div><input type="text" name="geometria" class="subject"></td>
+
+            </tr>
+
+
+            <tr>
+                <td><fmt:message key="account.atestat.history"/> </td>
+                <td class="atestatMark">${history}<input type="text" name="history" class="subject"></td>
+
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.sport"/> </td>
+                <td class="atestatMark">${fizra}<input type="text" name="fizra" class="subject"></td>
+            </tr>
+            <tr>
+                <td><fmt:message key="account.atestat.physics"/> </td>
+                <td class="atestatMark">${fiz}<input type="text" name="fiz" class="subject"></td>
+            </tr>
+
+        </table>
+
+
+        <button class="regBut changeRes" id="changeAtestatButton" onclick="return showFields()">
+            <fmt:message key="account.atestat.button.change"/> </button>
+        <input onclick="return valNumb()" class="regBut" id="regAtestatButton"type="submit" value="<fmt:message key="account.atestat.button.save"/> ">
+
+    </form>
+
+
+
+</div>
+

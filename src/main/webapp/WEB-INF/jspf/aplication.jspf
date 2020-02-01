@@ -1,0 +1,71 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
+<div class="atestat addApplication">
+    <h2><fmt:message key="account.application.headline"/> </h2>
+    <form  onsubmit="return validateAplication(this)" method="post" action="/servlet?c=appl&language=">
+    <div class="radioSort"><fmt:message key="account.application.sort.headline"/> </div>
+    <div class="radioSort">
+        <div><a href="/stud.ua-account?s=name"><input class="button" type="button" value="<fmt:message key="account.application.sort.byname"/>"></a></div>
+        <div><a href="/stud.ua-account?s=all"><input class="button" type="button" value="<fmt:message key="account.application.sort.all"/>"></a></div>
+        <div><a href="/stud.ua-account?s=free"><input class="button" type="button" value="<fmt:message key="account.application.sort.free"/>"></a></div>
+
+    </div>
+        <div class="sortDesc">
+            <div><a href="/stud.ua-account?s=nameDesc"><input class="button" type="button" value="<fmt:message key="account.application.sort.byname.d"/>"></a></div>
+            <div><a href="/stud.ua-account?s=allDesc"><input class="button" type="button" value="<fmt:message key="account.application.sort.all.d"/>"></a></div>
+            <div><a href="/stud.ua-account?s=freeDesc"><input class="button" type="button" value="<fmt:message key="account.application.sort.free.d"/>"></a></div>
+        </div>
+    <div class="rules">
+        <p><fmt:message key="account.application.warnign"/> </p>
+    </div>
+    <h3 class="notif"><fmt:message key="account.application.notiffication"/> </h3>
+    <h3 class="notifWrong">${wrongPriority}</h3>
+
+
+        <table class="departments">
+            <tr>
+                <td><fmt:message key="account.application.univer"/> </td>
+                <td>
+                    <select name="univers">
+                        <option hidden>...</option>
+                        <c:forEach var="univer" items="${univers}">
+                            <option value="${univer.id}">${univer.name} (${univer.cityName})</option>
+                        </c:forEach>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><fmt:message key="account.application.department.headline"/> </td>
+                <td>
+                    <select name="department">
+                        <option hidden>...</option>
+
+                        <c:forEach var="dep" items="${departments}">
+                            <option value="${dep.id}">${dep.name}
+                                <fmt:message key="account.application.drop.places"/> ${dep.allPlaces}
+                                <fmt:message key="account.application.drop.free"/> ${dep.freePlaces}</option>
+                        </c:forEach>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><fmt:message key="account.application.priority"/> </td>
+                <td>
+                    <select name="priority">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <input onclick="return btValid()" id="submitButton" type="submit" value="<fmt:message key="account.application.button"/> ">
+
+    </form>
+</div>
+
+
