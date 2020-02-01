@@ -1,7 +1,6 @@
 package ua.nure.brovenko.SummaryTask4.dao;
 
 
-import ua.nure.brovenko.SummaryTask4.connection.ConnectionPool;
 import ua.nure.brovenko.SummaryTask4.entity.Entrant;
 import ua.nure.brovenko.SummaryTask4.entity.User;
 import ua.nure.brovenko.SummaryTask4.exception.ConnectionPoolException;
